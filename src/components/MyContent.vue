@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>>-contenuti-</h1>
+    <h1>-contenuti-</h1>
 
   </div>
 </template>
@@ -12,6 +12,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+div{
+  background-color: black ;
+  padding: 30px;
+
+  h1{
+    color: #fff;
+    text-align: center;
+  }
+
+}
+  
 
 </style>

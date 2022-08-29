@@ -32,7 +32,7 @@ export default {
                 {
                     text: 'MOVIES',
                     url: '#', 
-                    acttive: false
+                    active: false
                 },
                 {
                     text: 'TV',
@@ -57,17 +57,17 @@ export default {
                 {
                     text: 'FANS',
                     url: '#', 
-                    acttive: false
+                    active: false
                 },
                 {
                     text: 'NEWS',
                     url: '#', 
-                    acttive: false
+                    active: false
                 },
                 {
                     text: 'SHOP',
                     url: '#', 
-                    acttive: false
+                    active: false
                 },
             ]
         }
@@ -75,6 +75,36 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  header{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+    ul{
+        list-style: none;
+        margin: 20px;
+        padding-top: 10px;
+
+        li{
+            display: inline-block;
+            margin:  0px 10px;
+            
+            a{
+                color: black;
+                text-decoration: none;
+                font-family: sans-serif;
+
+            &:active{
+                color: #0c7cec;
+                border-bottom: solid 2px #0c7cec;
+            }
+            &:hover{
+                color: #0c7cec;
+            }             
+            }
+        }
+    }
+  }
 
 </style>
