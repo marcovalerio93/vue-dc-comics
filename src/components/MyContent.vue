@@ -7,10 +7,7 @@
   </div>
 
   <div class="products">
-    <div v-for="(products, index) in products" :key="index" class="card">
-      <img :src="products.thumb">
-      <h3>{{products.series}}</h3>
-    </div>
+    <SingleProduct v-for="(products, index) in products" :key="index" :details="product" />
   </div>
 
 
@@ -18,8 +15,17 @@
 </template>
 
 <script>
+
+import SingleProduct from './SingleProduct.vue';
+
 export default {
     name:'MyContent',
+    components {
+      
+      SingleProduct
+
+    },
+
     data() {
       return {
         products:[
@@ -98,8 +104,8 @@ export default {
                 ]
       }
     }
-
 }
+
 </script>
 
 <style scoped lang="scss">
