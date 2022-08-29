@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="#"><span>SING-UPNOW</span></a>
+    <a href="#"><span>SING-UP-NOW</span></a>
     <div class="social">
       <span class="right">FOLLOW US</span>
       <img src="../assets/img/footer-facebook.png">
@@ -34,6 +34,7 @@ div{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    font-weight: 600;
     border: solid 1px #0c7cec;  
     padding: 10px;
   }
@@ -41,11 +42,12 @@ div{
   .social{
     .right{
     font-size: 20px;
+    font-weight: 600;
     color:#0c7cec ;
     margin: 20px;
 
     img{
-      height: 30px;
+      height: 10px;
       margin-left:10px;
     }
   }
